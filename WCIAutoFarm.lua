@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local EnableDisable = Instance.new("TextButton")
 ScreenGui.Name = "AutoFarm"
@@ -10,8 +5,6 @@ ScreenGui.Name = "AutoFarm"
 if game.Players.LocalPlayer.PlayerGui:FindFirstChild("AutoFarm") then
 	game.Players.LocalPlayer.PlayerGui:WaitForChild("AutoFarm"):Destroy()
 end
-
---Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -28,7 +21,6 @@ EnableDisable.TextScaled = true
 EnableDisable.TextSize = 14.000
 EnableDisable.TextWrapped = true
 
--- Scripts:
 
 local function PDSXMPL_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
